@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='paramont.css'>
+    <title>parallax espace</title>
+</head>
+<body>
+    <section class="banner">
+        <div class="container">
+            <div id="scene">
+                <div class="layer"><img src="parallax/nuitetoile.jpg"></div>     
+                <div class="layer" data-depth="-0.02"><img src="parallax/soleilvrai2.png"></div>
+                <div class="layer" data-depth-x="-1.1"><img src="parallax/etoiledelamort.png"></div>
+                <div class="layer" data-depth-x="0.6" data-depth-y="0.3"><img src="parallax/vaisseauemp.png"></div>
+                <div class="layer" data-depth="-0.04"><img src="parallax/terre.png"></div>
+                <div class="layer" data-depth-x="1.5" data-depth-y="1.2"><img src="parallax/vaisseauempire.png"></div>
+                <div class="layer" data-depth-x="3.3" data-depth-y="0.3"><img src="parallax/bobbafet.png"></div>
+                <div class="layer" data-depth="-0.2"><img src="parallax/lunesol2.webp"></div>
+                <div class="layer" data-depth-x="-1.2" data-depth-y="-0.3"><img src="parallax/dv.png"></div>
+                <div class="layer" data-depth-x="-1.2" data-depth-y="-0.3"><img src="parallax/texte.png"></div>
+                
+                
+                <div class="layer" data-depth-x="0.8"><img src="parallax/marvin.png"></div>
+                <div class="layer" data-depth-x="0.1"><img src="parallax/mir.png"></div>
+                <div class="layer" data-depth-x="5" data-depth-y="1.2"><img src="parallax/fauconmil.png"></div>
+                <div class="layer" data-depth-x="0.1"><img src="parallax/pesquet.png"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+</html>
